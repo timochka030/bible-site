@@ -75,7 +75,7 @@ function onError(error) {
       console.log(bind + ' is already in use')
       process.exit(1)
       break
-    default:
+    test:
       throw error
   }
 }

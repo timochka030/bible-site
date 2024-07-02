@@ -1,0 +1,55 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+<div >
+  {{#each documentHead}}
+  <div style='margin-bottom: 20px'>
+		<div class='head' style='padding-left: 5px;'>
+		<div
+			style='background: grey; width:fit-content; padding: 3px'
+		>{{number}} сторінка</div>
+		<div>{{lesson}} розділ {{title}}</div>
+		<div>{{location}}</div>
+		</div><hr />
+		{{#if boockStart}}
+		<div>
+		<h2 class='lesson_title'>{{smallTitle}}</h2>
+		<h1 class='lesson_title'>{{title}}</h1>
+		</div>
+		{{/if}}
+		<div class='content_text'>
+		<div class='column'>
+			{{#each column1}}
+			<div class='virsh'>
+				{{#if number}}
+				<div><span style="color: chocolate;">{{number}}</span> {{virsh}} </div>
+				{{else}}
+				<h1 style="font-size: 38px;height: min-content; margin:0">{{../lesson}}</h1>   {{virsh}}
+				{{/if}}
+			
+			</div>
+			{{/each}}
+
+		</div>
+		<div class='line_column'>#test</div>
+		<div class='column'>
+			{{#each column2}}
+			<div class='virsh'>
+				{{#if number}}
+				<div><span style="color: chocolate;">{{number}}</span> {{virsh}} </div>
+				{{else}}
+				<h1 style="font-size: 38px;height: min-content; margin:0">{{../lesson}}</h1> {{virsh}}
+				{{/if}}
+				
+			</div>
+			{{/each}}
+		</div>
+		</div>
+	</div>
+  {{/each}}
+</div>
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/test.hbs має вже структуру HTML
+}}

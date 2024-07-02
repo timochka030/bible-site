@@ -17,7 +17,7 @@ app.engine(
   'hbs',
   hbs.engine({
     extname: 'hbs',
-    defaultLayout: 'default',
+    testLayout: 'test',
     layoutsDir: __dirname + '/src/layout/',
     partialsDir: __dirname + '/src/component/',
   }),

@@ -1,11 +1,37 @@
-{{!-- 
+{{! 
 Це код container файлу для index сторінки, 
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- --}}
+ }}
 
-<h1>Hello world</h1>
+<div>
+  <div class='cards'>
+    <a href='/biblemenu' class='card_block'>
+      <img
+        src='img/bible.png'
+        class='card_image'
+        alt='bible'
+      />
+      <div>Біблія</div>
+    </a>
+    <div class='card_block'>
+      <img src='./' class='card_image' />
+      <div></div>
+      <div></div>
+    </div>
+    <div class='card_block'>
+      <img src='./' class='card_image' />
+      <div></div>
+      <div></div>
+    </div>
+    <div class='card_block'>
+      <img src='./' class='card_image' />
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
-{{!-- 
+</div>
+{{! 
     Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
---}}
+    Адже наш layout/test.hbs має вже структуру HTML
+}}
